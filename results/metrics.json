@@ -14,7 +14,7 @@
   "best_val_accuracy": 0.9854,
   "test_loss": 0.04119179723463021,
   "test_accuracy": 0.9864,
-  "training_seconds": 43.36,
+  "training_seconds": 47.91,
   "python": "3.13.15",
   "torch": "2.14.0+cu126",
   "torchvision": "0.29.0+cu126",
