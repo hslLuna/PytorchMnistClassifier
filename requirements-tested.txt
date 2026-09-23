@@ -1,0 +1,7 @@
+# Direct dependency versions used for the recorded CPU experiment.
+# The local torch/torchvision wheels had the +cu126 build suffix.
+# Install torch and torchvision as a matching pair for your platform.
+torch==2.14.0
+torchvision==0.29.0
+matplotlib==3.11.2
+Pillow==12.3.0
