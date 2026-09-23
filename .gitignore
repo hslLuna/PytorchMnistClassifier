@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.pyc
+
+# PyCharm
+.idea/
+
+# Virtual environments
+.venv/
+venv/
+
+# Dataset
+data/
+
+# Model checkpoints
+checkpoints/
+*.pth
+*.pt
+
+# System files
+.DS_Store
+Thumbs.db
