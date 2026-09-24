@@ -92,34 +92,6 @@ python -m venv .venv
 .\.venv\Scripts\python.exe train.py --lr 0.0005 --output-dir results/lr_0005 --checkpoint checkpoints/lr_0005.pt
 ```
 
-## 我需要能够解释的基本概念
-
-1. `Dataset` 存储样本，`DataLoader` 负责分批和打乱；张量的四个维度分别表示什么？
-2. 为什么交叉熵损失接收 logits，而不需要先调用 softmax？
-3. `zero_grad → backward → step` 如何实现一次参数更新？
-4. `model.train()`、`model.eval()` 与关闭梯度各自解决什么问题？
-5. 为什么根据验证集选择模型，而不能根据测试集选择最佳轮次？
-6. 哪些数字容易混淆，训练曲线是否显示过拟合？
-
-下一步可以固定数据划分，对比全连接网络与 CNN，或改变 Dropout 和学习率。用验证集选择配置，再报告最终测试结果；多随机种子实验应报告均值和标准差。当前结果仅代表一次运行。
-
-## 发布到 GitHub 并显示在主页
-
-1. 在 GitHub 创建 Public 空仓库 `PytorchMnistClassifier`，不要初始化 README、License 或 `.gitignore`。
-2. 检查待提交文件，避免提交数据集、虚拟环境、模型权重和 IDE 配置。
-3. 首次提交并推送（已经提交过的步骤无需重复）：
-
-```powershell
-git add .gitignore README.md requirements.txt requirements-tested.txt model.py data_utils.py train.py predict.py tests results
-git commit -m "Add reproducible PyTorch MNIST classification project"
-git remote add origin https://github.com/hslLuna/PytorchMnistClassifier.git
-git push -u origin HEAD
-```
-
-如果 `origin` 已存在，先用 `git remote -v` 检查，不要重复添加。推送时按 Git 的提示完成 GitHub 登录；无需将 token 写入代码。
-
-4. 打开个人主页 → **Customize your pins** → 选中该仓库 → **Save pins**。主页会展示项目卡片，点击后即可查看代码、README 和实验图表。
-
 ## 参考资料
 
 - [PyTorch 官方基础教程](https://docs.pytorch.org/tutorials/beginner/basics/quickstart_tutorial.html)：数据加载、训练循环与模型保存。
