@@ -91,9 +91,3 @@ python -m venv .venv
 ```powershell
 .\.venv\Scripts\python.exe train.py --lr 0.0005 --output-dir results/lr_0005 --checkpoint checkpoints/lr_0005.pt
 ```
-
-## 参考资料
-
-- [PyTorch 官方基础教程](https://docs.pytorch.org/tutorials/beginner/basics/quickstart_tutorial.html)：数据加载、训练循环与模型保存。
-- [Torchvision MNIST 文档](https://docs.pytorch.org/vision/stable/generated/torchvision.datasets.MNIST.html)：本项目使用的数据集接口。
-- [GitHub 官方置顶仓库说明](https://docs.github.com/en/account-and-profile/how-tos/profile-customization/pinning-items-to-your-profile)。
